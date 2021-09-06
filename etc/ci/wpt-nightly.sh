@@ -14,11 +14,6 @@ REMOTE_NAME=sync-fork
 BRANCH_NAME="wpt_update"
 REMOTE_BRANCH_NAME="wpt_update_${CURRENT_DATE}"
 
-export GIT_AUTHOR_NAME="WPT Sync Bot"
-export GIT_AUTHOR_EMAIL="josh+wptsync@joshmatthews.net"
-export GIT_COMMITTER_NAME="${GIT_AUTHOR_NAME}"
-export GIT_COMMITTER_EMAIL="${GIT_AUTHOR_EMAIL}"
-
 # Using an existing log file, update the expected test results and amend the
 # last commit with the new results.
 function unsafe_update_metadata() {
